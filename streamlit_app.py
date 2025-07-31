@@ -6,7 +6,7 @@ from datetime import date
 st.title('How old will i be?')
 
 default_dob = date(1988,5,23)
-future_date = date.today()
+future_date = date(2074,5,11)
 
 col1, col2 = st.columns(2)
 
