@@ -17,7 +17,7 @@ with col2:
     future_date = st.date_input("Future Date", value=future_date, min_value = date(1900,1,1), max_value = date(2200,1,1))
 
 diff = relativedelta(future_date,dob)
-timeleft = relativedelta(date.today(),future_date)
+timeleft = relativedelta(future_date,date.today())
 
 if dob > future_date:
     st.error("Time Travel not supported, pick a future date.")
