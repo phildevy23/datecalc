@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
-from datetime import relativedelta
-
+from dateutil.relativedelta import relativedelta
 
 st.title('How old will i be?')
 
