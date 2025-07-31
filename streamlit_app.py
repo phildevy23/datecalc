@@ -21,4 +21,4 @@ diff = relativedelta(future_date,dob)
 if dob > future_date:
     st.error("Time Travel not supported, pick a future date.")
 else:
-    st.success(f"if you were born on {dob}, you would be {diff.years} years, {diff.months} months and {diff.days} day old on {future_date}")
+    st.success(f"if you were born on {dob}, you would be {diff.years} years, {diff.months} months and {diff.days} days old on {future_date}")
