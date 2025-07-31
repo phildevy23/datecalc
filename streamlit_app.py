@@ -16,7 +16,7 @@ with col1:
 with col2:
     future_date = st.date_input("Future Date", value=future_date)
 
-diff = relativedelta.relativedelta(future_date,dob)
+diff = relativedelta(future_date,dob)
 
 if dob > future_date:
     st.error("Time Travel not supported")
