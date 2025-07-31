@@ -17,8 +17,10 @@ with col2:
     future_date = st.date_input("Future Date", value=future_date, min_value = date(1900,1,1), max_value = date(2200,1,1))
 
 diff = relativedelta(future_date,dob)
+timeleft = relativedelta(date.today(),future_date)
 
 if dob > future_date:
     st.error("Time Travel not supported, pick a future date.")
 else:
     st.success(f"if you were born on {dob}, you would be {diff.years} years, {diff.months} months and {diff.days} days old on {future_date}")
+    st.info(f"thats in {timeleft.years} years, {timeleft.months} months and {timeleft.days}")
