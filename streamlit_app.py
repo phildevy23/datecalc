@@ -11,10 +11,10 @@ future_date = date(2074,5,11)
 col1, col2 = st.columns(2)
 
 with col1:
-    dob = st.date_input("Your DOB", value =default_dob)
+    dob = st.date_input("Your DOB", value =default_dob, min_value = date(1900,1,1),max_value = date.today())
 
 with col2:
-    future_date = st.date_input("Future Date", value=future_date)
+    future_date = st.date_input("Future Date", value=future_date, min_value = date(1900,1,1), max_value = date(2200,1,1))
 
 diff = relativedelta(future_date,dob)
 
